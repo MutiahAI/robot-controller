@@ -1,0 +1,11 @@
+<launch>
+  <group ns="AR_test">
+    <node name="points_generator_node" pkg="ar_week5_test" type="points_generator.py"/>
+    <node name="cubic_traj_planner_node" pkg="ar_week5_test" type="cubic_traj_planner.py"/>
+    <node name="compute_cubic_coeffs_node" pkg="ar_week5_test" type="compute_cubic_coeffs.py"/>
+    <node name="plot_cubic_traj_node" pkg="ar_week5_test" type="plot_cubic_traj.py"/>
+  </group>
+
+  <node pkg="rqt_plot" type="rqt_plot" name="rqt_plot" args="/AR_test/plot_pos, /AR_test/plot_vel, /AR_test/plot_acc"/>
+
+</launch>
