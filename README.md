@@ -1,5 +1,5 @@
 ### ROS package that automatically generates point-to-point cubic trajectories connecting pairs of randomly generated points. 
-### After running the launch file, random trajectories can be seen appearing on the rqt_plot GUI (i.e. a different set of trajectories every 20 seconds).
+##### After running the launch file, random trajectories can be seen appearing on the rqt_plot GUI (i.e. a different set of trajectories every 20 seconds).
 
 ### To run the package:
 
